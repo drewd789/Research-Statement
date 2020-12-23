@@ -13,7 +13,7 @@
 
 \title{Research Statement}
 \author{Drew Duncan}
-\date{\today}
+%\date{\today}
 
 \begin{document}
 
@@ -51,13 +51,15 @@ a_1x_1^d + a_2x_2^d + \ldots + a_sx_s^d
 
 A famous conjecture of Artin claimed that any homogeneous form over a local field $K$ of degree $d$ in $d^2+1$ variables has a nontrivial zero regardless of the choice of coefficients from $K$.  Strictly speaking, Artin's conjecture is wrong; many well-known counterexamples to this conjecture have been discovered (see \cite{MR197450}, \cite{greenberg1969lectures}).   Tantalizing questions arise, however, when one asks, \textit{how} wrong?  The astounding Ax-Kochen Theorem implies that for any given $d$, Artin's conjecture does hold for all $\mathbb{Q}_p$, provided $p$ is sufficiently large.  In this sense the Artin conjecture is almost correct.  Another tantalizing clue lies in the fact that none of the counterexamples have been additive forms.  It has therefore been proposed that the conjecture holds when restricted to additive forms.  I will refer to this as Artin's Additive Form Conjecture.
 
-Let $\Gamma^*(d, K)$ represent the minimum number of variables $s$ such that every additive form (\ref{eq}) is guaranteed to have a nontrivial zero, regardless of the choice of nonzero $a_i \in K$.  In this language, Artin's Additive Form Conjecture posits that $\Gamma^*(d, K) \le d^2+1$. One advantage to working with additive forms is that one can apply a special technique known as the \textit{method of contraction}.  Davenport and Lewis introduced this technique in \cite{davenport1963homogeneous}, and used it to establish not only the truth of Artin's Additive Form Conjecture for every field of p-adic numbers $\mathbb{Q}_p$, but the optimality of this bound when $d=p-1$.  The question of Artin's Additive Form Conjecture and related bounds on $\Gamma^*$ were investigated further by Birch in \cite{birchdiagonal_MR167456}, by Dodson in \cite{dodson1_MR213296}, \cite{dodson2_MR382139}, and \cite{dodson3_MR649113}, Wooley in \cite{wooley_MR3365797}, and by Brink, Godingo, and Rodriguez in \cite{godinho_MR2413361}, among many others.
+Let $\Gamma^*(d, K)$ represent the minimum number of variables $s$ such that every additive form (\ref{eq}) is guaranteed to have a nontrivial zero, regardless of the choice of nonzero $a_i \in K$.  In this language, Artin's Additive Form Conjecture posits that $\Gamma^*(d, K) \le d^2+1$. One advantage to working with additive forms is that one can apply a special technique known as the \textit{method of contraction}.  Davenport and Lewis introduced this technique in \cite{davenport1963homogeneous}, and used it to establish not only the truth of Artin's Additive Form Conjecture for every field of p-adic numbers $\mathbb{Q}_p$, but the optimality of this bound when $d=p-1$.  The question of Artin's Additive Form Conjecture and related bounds on $\Gamma^*$ were investigated further by Birch in \cite{birchdiagonal_MR167456}, by Dodson in \cite{dodson1_MR213296}, \cite{dodson2_MR382139}, and \cite{dodson3_MR649113}, Wooley in \cite{wooley_MR3365797}, and by Brink, Godingo, and Rodriguez in \cite{godinho_MR2413361}, among many others.  In particular, \cite{leep2018diagonal} showed that Artin's Additive Form Conjecture holds for all unramified extensions of $\mathbb{Q}_p$ with $p \ne 2$.
 
 %In \cite{birchdiagonal_MR167456}, Birch showed the existence of a bound for $\Gamma^*(d, K)$ independent of the local field $K$, but notes that this bound is very inefficient.
 
-It should be noted that when $d \ne p-1$ very often a much lower value of $\Gamma^*(d, \mathbb{Q}_p)$ can be found.  Further, little is known in general about $\Gamma^*$ for finite extensions of $\mathbb{Q}_p$.
+It should be noted that when $d \ne p-1$ very often a much lower value of $\Gamma^*(d, \mathbb{Q}_p)$ can be found.  However, exact values of $\Gamma^*(d, K)$ in these cases are quite difficult to obtain.  For $K = \mathbb{Q}_p$, exact values are only known for a handful of small values of $d$ (\cite{knappexact1_MR3998981}, \cite{knappexact2_MR2811557}).   Further, little is known about $\Gamma^*$ for finite extensions of $\mathbb{Q}_p$.
 
-In \cite{knapp2016solubility}, Knapp, using the method of contraction, showed that for all six of the ramified quadratic extensions $K$ of $\mathbb{Q}_2$, we have $\Gamma^*(6,K) \le 9$, with equality holding for $K \in \{\mathbb{Q}_2(\sqrt{2}), \mathbb{Q}_2(\sqrt{10}), \mathbb{Q}_2(\sqrt{-2}), \mathbb{Q}_2(\sqrt{-10})\}$.  For the remaining two extensions, $\mathbb{Q}_2(\sqrt{-1})$ and $\mathbb{Q}_2(\sqrt{-5})$, Knapp further showed that $\Gamma^*(6,K) \ge 7$ and conjectured that $\Gamma^*(6,K) = 7$.
+In \cite{knapp2016solubility}, Knapp, using the method of contraction, showed that for all six of the ramified quadratic extensions $K$ of $\mathbb{Q}_2$, we have $\Gamma^*(6,K) \le 9$, with equality holding for $K \in \{\mathbb{Q}_2(\sqrt{2}), \mathbb{Q}_2(\sqrt{10}), \mathbb{Q}_2(\sqrt{-2}), \mathbb{Q}_2(\sqrt{-10})\}$.  For the remaining two extensions, $\mathbb{Q}_2(\sqrt{-1})$ and $\mathbb{Q}_2(\sqrt{-5})$, Knapp further showed that $\Gamma^*(6,K) \ge 7$ and conjectured that $\Gamma^*(6,K) = 7$.  Beyond some simple cases, this was all that was known about exact values of $\Gamma^*$ for proper extensions of $\mathbb{Q}_p$.
+
+\section{Results}
 
 In \cite{2020arXiv200509770D}, we showed that Knapp's conjecture holds.
 
@@ -75,7 +77,7 @@ Let $d=2m$, where $m$ is an odd integer at least 3.
 \end{itemize}
 \end{theorem}
 
-Again extending the technique of contraction, I was able to show that $\Gamma^*(d,K) \le d^2 + 1$ for all six ramified quadratic extensions of $\mathbb{Q}_2$ and $d=4$.  Further,
+Again extending the technique of contraction, I was able to show \cite{quarticforms} that $\Gamma^*(d,K) \le d^2 + 1$ for all six ramified quadratic extensions of $\mathbb{Q}_2$ and $d=4$.  Further,
 
 \begin{theorem}
 If $K \in \{\mathbb{Q}_2(\sqrt{2}), \mathbb{Q}_2(\sqrt{10}), \mathbb{Q}_2(\sqrt{-2}), \mathbb{Q}_2(\sqrt{-10})\}$, then  $$\Gamma^*(4, K) = 11$$
@@ -88,6 +90,10 @@ If $K$ is any totally ramified extension of $\mathbb{Q}_2$ and $d=2m$, where m i
 
 $$\Gamma^*(d,K) \le d^2+1.$$
 \end{theorem}
+
+\section{Plan for Future Research}
+
+This is a very rich research area, with many interesting questions still unanswered.  An answer to Artin's Additive Form Conjecture appears to be tantalizingly within reach, and preliminary calculations suggest mystifying patterns in the exact values of $\Gamma^*$.
 
 \bibliographystyle{alpha}
 \bibliography{biblio}
