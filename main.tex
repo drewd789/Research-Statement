@@ -1,0 +1,95 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+
+\title{Research Statement}
+\author{Drew Duncan}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+%\section{Notes}
+
+%short paragraph, i'm going to continue this further.  a short paragraph about the future
+
+%theorem 3 put in references as preprint (name, title, preprint, period.)
+
+%other people have worked on a single additive form.  paper by brian birch around 1964.  paper by godinho?  
+
+%expand references to artin conjecture counterexamples?
+
+%others have focused on the additive forms because one can obtain more precise results
+
+%put in paper by leep/lewis.  after you consider the unramified case.
+
+%even for a single additive form, there's a vast amount of work yet to be done.  this is a rich research area where there's a lot work.
+
+%list of people interested in this problem (trevor wooley for example) (dodson)
+
+%systems of additive forms.
+
+%these are the first nontrivial examples of fields other than $Q_p$ where the exact value of gamma star has been found
+
+\section{Introduction}
+
+Homogeneous forms of the type
+\begin{equation}
+\label{eq}
+a_1x_1^d + a_2x_2^d + \ldots + a_sx_s^d
+\end{equation} where the nonzero coefficients $a_1, \ldots, a_s$ belong to some field $K$ are known as \textit{additive forms} (also often referred to as \textit{diagonal forms}) of degree $d$.  My research focuses on additive forms over local fields (i.e., p-adic fields), and the number of variables needed to guarantee that they have nontrivial zeros (a zero other than the one obtained by setting every variable to zero).
+
+A famous conjecture of Artin claimed that any homogeneous form over a local field $K$ of degree $d$ in $d^2+1$ variables has a nontrivial zero regardless of the choice of coefficients from $K$.  Strictly speaking, Artin's conjecture is wrong; many well-known counterexamples to this conjecture have been discovered (see \cite{MR197450}, \cite{greenberg1969lectures}).   Tantalizing questions arise, however, when one asks, \textit{how} wrong?  The astounding Ax-Kochen Theorem implies that for any given $d$, Artin's conjecture does hold for all $\mathbb{Q}_p$, provided $p$ is sufficiently large.  In this sense the Artin conjecture is almost correct.  Another tantalizing clue lies in the fact that none of the counterexamples have been additive forms.  It has therefore been proposed that the conjecture holds when restricted to additive forms.  I will refer to this as Artin's Additive Form Conjecture.
+
+Let $\Gamma^*(d, K)$ represent the minimum number of variables $s$ such that every additive form (\ref{eq}) is guaranteed to have a nontrivial zero, regardless of the choice of nonzero $a_i \in K$.  In this language, Artin's Additive Form Conjecture posits that $\Gamma^*(d, K) \le d^2+1$. One advantage to working with additive forms is that one can apply a special technique known as the \textit{method of contraction}.  Davenport and Lewis introduced this technique in \cite{davenport1963homogeneous}, and used it to establish not only the truth of Artin's Additive Form Conjecture for every field of p-adic numbers $\mathbb{Q}_p$, but the optimality of this bound when $d=p-1$.  The question of Artin's Additive Form Conjecture and related bounds on $\Gamma^*$ were investigated further by Birch in \cite{birchdiagonal_MR167456}, by Dodson in \cite{dodson1_MR213296}, \cite{dodson2_MR382139}, and \cite{dodson3_MR649113}, Wooley in \cite{wooley_MR3365797}, and by Brink, Godingo, and Rodriguez in \cite{godinho_MR2413361}, among many others.
+
+%In \cite{birchdiagonal_MR167456}, Birch showed the existence of a bound for $\Gamma^*(d, K)$ independent of the local field $K$, but notes that this bound is very inefficient.
+
+It should be noted that when $d \ne p-1$ very often a much lower value of $\Gamma^*(d, \mathbb{Q}_p)$ can be found.  Further, little is known in general about $\Gamma^*$ for finite extensions of $\mathbb{Q}_p$.
+
+In \cite{knapp2016solubility}, Knapp, using the method of contraction, showed that for all six of the ramified quadratic extensions $K$ of $\mathbb{Q}_2$, we have $\Gamma^*(6,K) \le 9$, with equality holding for $K \in \{\mathbb{Q}_2(\sqrt{2}), \mathbb{Q}_2(\sqrt{10}), \mathbb{Q}_2(\sqrt{-2}), \mathbb{Q}_2(\sqrt{-10})\}$.  For the remaining two extensions, $\mathbb{Q}_2(\sqrt{-1})$ and $\mathbb{Q}_2(\sqrt{-5})$, Knapp further showed that $\Gamma^*(6,K) \ge 7$ and conjectured that $\Gamma^*(6,K) = 7$.
+
+In \cite{2020arXiv200509770D}, we showed that Knapp's conjecture holds.
+
+\begin{theorem}
+We have $$\Gamma^*(6, \mathbb{Q}_2(\sqrt{-1})) = \Gamma^*(6, \mathbb{Q}_2(\sqrt{-5})) = 7. $$
+\end{theorem}
+
+By extending these techniques, we were able to find an exact value for $\Gamma^*(d,K)$ for all six ramified quadratic extensions of $\mathbb{Q}_2$ and degrees $d=2m$, where $m$ is odd and at least 3. \cite{2020arXiv201006833D}
+
+\begin{theorem} \label{theo}
+Let $d=2m$, where $m$ is an odd integer at least 3.
+\begin{itemize}
+    \item If $K \in \{\mathbb{Q}_2(\sqrt{2}), \mathbb{Q}_2(\sqrt{10}), \mathbb{Q}_2(\sqrt{-2}), \mathbb{Q}_2(\sqrt{-10})\}$, then $\Gamma^*(d,K) = \frac{3}{2}d$.
+    \item If $K \in  \{\mathbb{Q}_2(\sqrt{-1})$, $\mathbb{Q}_2(\sqrt{-5})$\}, then $\Gamma^*(d,K) = d+1$.
+\end{itemize}
+\end{theorem}
+
+Again extending the technique of contraction, I was able to show that $\Gamma^*(d,K) \le d^2 + 1$ for all six ramified quadratic extensions of $\mathbb{Q}_2$ and $d=4$.  Further,
+
+\begin{theorem}
+If $K \in \{\mathbb{Q}_2(\sqrt{2}), \mathbb{Q}_2(\sqrt{10}), \mathbb{Q}_2(\sqrt{-2}), \mathbb{Q}_2(\sqrt{-10})\}$, then  $$\Gamma^*(4, K) = 11$$
+\end{theorem}
+
+Finally, I have shown that
+
+\begin{theorem}
+If $K$ is any totally ramified extension of $\mathbb{Q}_2$ and $d=2m$, where m is an odd integer at least 3,
+
+$$\Gamma^*(d,K) \le d^2+1.$$
+\end{theorem}
+
+\bibliographystyle{alpha}
+\bibliography{biblio}
+
+\end{document}
